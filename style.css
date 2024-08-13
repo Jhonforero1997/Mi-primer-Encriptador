@@ -1,0 +1,292 @@
+*{
+  background:#F3F5FC;
+ 
+}
+:root {
+  --regular: 400;
+  --altolinea: 2rem;
+  --fontfamily: "Inter" sans-serif;
+}
+
+
+
+.logo{
+  margin: 3rem 0 5rem 0;
+  
+  display: flex;
+}
+
+.header_logo {
+  gap: 10rem;
+  display: flex;
+}
+
+main{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.seccio1 {
+  width: 50%;
+}
+
+.text-area {
+  font-family: var(--fontfamily);
+  font-weight: var(--regular);
+  font-size: 2rem;
+  resize: none;
+  border: none;
+  color: #0A3871;
+  margin-top: 90px;
+ /*  line-height: 1px; */
+  text-transform: none;
+  gap: 30px;
+}
+
+::placeholder {color: #0A3871;}
+.text-area:focus {
+  outline: none;
+}
+
+.mensaje{
+  font-family: var(--fontfamily);
+  font-weight: var(--regular);
+  font-size: 2rem;
+  background: white;
+  background-image: url("./imagenes/Muñeco.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%; /* Ajusta el tamaño del muñeco */
+  background-position:  center; /* Mantiene el muñeco a la izquierda */
+  border: none;
+  resize: none;
+  border-radius: 24px;
+  color: #0A3871;
+  outline: none;
+}
+
+.contenedor-alerta{
+  display: flex;
+  flex-direction: row;
+  width: 100;
+}
+
+.logo2 {
+  width: 18px;
+  height: 18px;
+}
+
+
+.mensaje {
+  outline: none;
+}
+
+.botones{
+  display: flex;
+  margin-top: 18px;
+  gap:30px;
+}
+
+.btn-desencriptar, .btn-encriptar, .copiar {
+  font-family: var(--fontfamily);
+  font-weight: var(--regular);
+  font-size: 2rem;
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.btn-encriptar {
+  background-color: #0A3871;
+  border: 1px solid #0A3871;
+  color: white;
+} 
+
+ .copiar {
+  color: rgb(159, 147, 147);
+  
+} 
+
+.informacion {
+  display: flex;
+  color: #495057;
+  font-size: 18px;
+  margin: 0;
+  gap: 5px;
+}
+
+.salida-texto{
+  background-color: white;
+  padding: 15px;
+  overflow: hidden;
+  border-radius: 24px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+p{
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+
+span{
+  background-color: white;
+  font-size: 15px;
+}
+
+.ocultar{
+  display: none;
+}
+
+/* Mejora del diseño responsive */
+@media (max-width: 1268px) {
+
+  main {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+  }
+
+  .logo {
+      width: 20%;
+  }
+
+  .text-area, .mensaje {
+    margin: 50px 0 0 30px;
+      font-size: 28px;
+  }
+
+  .btn-desencriptar, .btn-encriptar, .copiar {
+      width: 90%;
+      height: 60px;
+      font-size: 18px;
+  }
+
+  .salida-texto {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+  }
+
+  p {
+      font-size: 18px;
+  }
+
+  span {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  main {
+      gap: 30px;
+  }
+
+  .logo {
+      width: 30%;
+  }
+
+  .text-area, .mensaje {
+    margin: 30px 0 0 30px;
+      font-size: 24px;
+  }
+  .mensaje {
+    background-image: none;
+    
+  }
+  .mover-texto{
+    margin: -250px 0 0 0;
+  }
+
+  .btn-desencriptar, .btn-encriptar, .copiar {
+      width: 100%;
+      height: 55px;
+      font-size: 16px;
+  }
+
+  .salida-texto {
+      height: 600px;
+      padding: 8px;
+      align-items: center;
+  }
+
+  p {
+      font-size: 36px;
+  }
+
+  span {
+      font-size: 28px;
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  main {
+      gap: 30px;
+  }
+
+  .logo {
+      width: 30%;
+  }
+
+  .text-area, .mensaje {
+    margin: 30px 0 0 30px;
+      font-size: 24px;
+  }
+
+  .informacion{
+    display: flex;
+    margin: 0 0 0 30px;
+  }
+  .mensaje {
+    background-image: none;
+    
+  }
+  .mover-texto {
+    margin: -250px 0 0 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-desencriptar, .btn-encriptar, .copiar {
+      width: 100%;
+      height: 55px;
+      font-size: 16px;
+  }
+  .botones {
+    display: flex;
+    margin: 18px 0 0 55px;
+    gap: 30px;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .salida-texto {
+      height: 600px;
+      padding: 8px;
+      align-items: center;
+  }
+
+  p {
+      font-size: 36px;
+  }
+
+  span {
+    font-size: 28px;
+    text-align: center;
+  }
+
+}
